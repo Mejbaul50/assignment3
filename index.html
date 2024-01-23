@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/6.png" type="image/x-icon">
+  <title>Hockeys Club</title>
+  <!-- Tailwind and daisyUI config section -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font family config section -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f816990603.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind cus. -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- style section -->
+  <style>
+    .Manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+<body class="Manrope mx-4 lg:mx-0">
+    <header class="container mx-auto lg:my-14">
+  
+      <nav>
+        <div class="navbar p-0">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost   lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0"
+                class="flex justify-center items-start menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+  
+                <li><a class="text-primary-color">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <div class="join">
+                  <input type="text" placeholder="Search"
+                    class="input input-bordered join-item w-3/4 border-none focus:outline-none mr-2" />
+                  <i class="fa-solid fa-magnifying-glass text-slate-400 flex items-center"></i>
+                </div>
+              </ul>
+            </div>
+            <div class="flex">
+              <a class="btn btn-ghost md:text-4xl pl-0 text-2xl font-extrabold ">Hockey<span
+                  class="text-primary-color">’</span>s</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal flex gap-8 justify-center items-center">
+              <li><a class="text-primary-color">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-6">
+            <i class="hidden lg:block fa-solid fa-magnifying-glass text-slate-400"></i>
+            <a class="btn btn-sm lg:btn-lg btn-md bg-primary-color text-white md:font-semibold hover:bg-sky-700">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    
+</body>
+</html>
